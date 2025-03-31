@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyNFT Mint</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Mint MyNFT</h1>
+    <button onclick="mintNFT()">Mint NFT</button>
+    <script src="script.js"></script>
+
+    <script>
+        async function mintNFT() {
+            const recipientAddress = document.getElementById('recipientAddress').value;
+            await mintNFT(recipientAddress);
+        }
+    </script>
+</body>
+</html>
